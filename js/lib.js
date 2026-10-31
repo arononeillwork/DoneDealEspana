@@ -64,8 +64,9 @@ export const PROVINCES = [
 // ---------------------------------------------------------------------------
 // Formatting
 // ---------------------------------------------------------------------------
-const eur0 = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
-const eur2 = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2 });
+// useGrouping 'always' gives "2.500 €" (Spanish style otherwise drops the separator below 10.000).
+const eur0 = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0, useGrouping: 'always' });
+const eur2 = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2, useGrouping: 'always' });
 export function fmtPrice(p) {
   if (p == null || p === '') return 'Price on request';
   const n = Number(p);
