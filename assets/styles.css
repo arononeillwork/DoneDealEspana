@@ -284,6 +284,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: 0 14px 34px rgba(20, 33,
 .safety p { margin: 0; }
 .item-details { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(320px, 1fr); gap: 32px; margin-top: 32px; }
 .item-details section { background: var(--card); border-radius: var(--radius); padding: 24px; border: 1px solid var(--line-2); }
+.item-details section > h2 { margin-top: 0; }
 .desc { white-space: pre-wrap; overflow-wrap: anywhere; color: var(--ink-2); }
 .specs { margin: 0; }
 .specs > div { display: grid; grid-template-columns: 38% 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line-2); }
