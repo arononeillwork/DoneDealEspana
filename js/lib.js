@@ -184,6 +184,9 @@ export async function resizeImage(file, max = 1600, quality = 0.85) {
 export function friendlyError(e) {
   const m = e?.message || String(e || '');
   if (/Failed to fetch|NetworkError|Load failed/i.test(m)) return 'Connection problem. Check your internet and try again.';
+  if (e?.code === 'email_address_not_authorized' || /address not authorized/i.test(m))
+    return "We can't send emails to that address yet while sign-ups are being set up. Please try again soon.";
+  if (e?.code === 'over_email_send_rate_limit' || /rate limit/i.test(m)) return 'Too many emails sent just now. Please try again in an hour.';
   if (/JWT|not authenticated|401/i.test(m)) return 'Your session has expired. Please log in again.';
   if (/row-level security|permission denied/i.test(m)) return "You don't have permission to do that.";
   return m || 'Something went wrong.';
