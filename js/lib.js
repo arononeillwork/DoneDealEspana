@@ -44,6 +44,7 @@ export const categoryLabel = (id) => CATEGORIES.find((c) => c.id === id)?.label 
 
 export const CONDITIONS = [
   { id: 'new', label: 'New', hint: 'Never used, in its original packaging' },
+  { id: 'used', label: 'Second hand', hint: 'Previously owned, see the description for details' },
   { id: 'like_new', label: 'Like new', hint: 'Barely used, no visible wear' },
   { id: 'good', label: 'Good', hint: 'Used, works perfectly, light signs of use' },
   { id: 'fair', label: 'Fair', hint: 'Visible wear, fully working' },
