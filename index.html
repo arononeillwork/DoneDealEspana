@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>DoneDealEspana · Buy and sell anything in Spain</title>
+  <meta name="description" content="DoneDealEspana is Spain's friendly marketplace. List anything for free, chat with buyers and close the deal your way.">
+  <meta name="theme-color" content="#0b7a57">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DoneDealEspana · Buy and sell anything in Spain">
+  <meta property="og:description" content="List anything for free, chat with buyers and close the deal your way.">
+  <meta property="og:image" content="/assets/og.png">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="modulepreload" href="/js/vendor/supabase.js">
+  <script type="module" src="/js/app.js"></script>
+</head>
+<body>
+  <button class="skip" type="button" onclick="document.getElementById('view').focus()">Skip to content</button>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#/" aria-label="DoneDealEspana home">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#0b7a57"/><path d="M11 21.5l6 6L29.5 14" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="31" cy="31" r="4.5" fill="#f4b400"/></svg>
+        <span class="logo-text">DoneDeal<span>España</span></span>
+      </a>
+      <form class="header-search" id="header-search" role="search">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input name="q" type="search" placeholder="Search for anything" aria-label="Search items" autocomplete="off">
+      </form>
+      <nav class="header-actions" id="header-actions" aria-label="Account"></nav>
+    </div>
+  </header>
+
+  <main id="view" tabindex="-1">
+    <section class="container page-pad"><div class="grid"><div class="card skeleton"><div class="card-img"></div></div><div class="card skeleton"><div class="card-img"></div></div><div class="card skeleton"><div class="card-img"></div></div><div class="card skeleton"><div class="card-img"></div></div></div></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="logo logo-sm" href="#/"><span class="logo-text">DoneDeal<span>España</span></span></a>
+        <p class="small muted">Buy and sell anything in Spain. Every sale is a private agreement between buyer and seller.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#/how-it-works">How it works</a>
+        <a href="#/sell">Sell an item</a>
+        <a href="#/terms">Terms &amp; Conditions</a>
+        <a href="#/privacy">Privacy</a>
+      </nav>
+      <p class="small muted copy">© 2026 DoneDealEspana</p>
+    </div>
+  </footer>
+
+  <nav class="tabbar" id="tabbar" aria-label="Main"></nav>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <noscript><p style="padding:16px">DoneDealEspana needs JavaScript to run.</p></noscript>
+</body>
+</html>
