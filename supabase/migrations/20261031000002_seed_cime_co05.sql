@@ -6,20 +6,7 @@
 insert into public.listings (title, description, price, category, condition, brand, location, specifics, images, status)
 values (
   'CIME CO-05 MULTI BOILER PID 3 GROUP ESPRESSO COFFEE MACHINE BRAND NEW BLACK',
-  E'Brand new CIME CO-05 multi-boiler espresso machine with three E61 group heads and PID temperature control, finished in matte total black.\n\n'
-  E'Features\n'
-  E'• Matte total black body\n'
-  E'• 3 × E61 group heads\n'
-  E'• PID temperature control\n'
-  E'• Programmable volumetric controls\n'
-  E'• 12 L boiler\n'
-  E'• Shot timer and electronic display\n'
-  E'• Internal rotary pump\n'
-  E'• Hot water tap\n'
-  E'• Dual steam wands\n\n'
-  E'Power: 4000 W / 20 A single-phase\n'
-  E'Dimensions: 74 cm W × 54 cm D × 50 cm H\n'
-  E'Water source: direct (plumbed-in) connection',
+  E'Brand new CIME CO-05 multi-boiler espresso machine with three E61 group heads and PID temperature control, finished in matte total black.\n\nFeatures\n• Matte total black body\n• 3 × E61 group heads\n• PID temperature control\n• Programmable volumetric controls\n• 12 L boiler\n• Shot timer and electronic display\n• Internal rotary pump\n• Hot water tap\n• Dual steam wands\n\nPower: 4000 W / 20 A single-phase\nDimensions: 74 cm W × 54 cm D × 50 cm H\nWater source: direct (plumbed-in) connection',
   null,
   'business',
   null,
